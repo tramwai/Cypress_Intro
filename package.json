@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "echo I am PreTest",
+    "posttest": "echo I am PostTest",
+    "test": "echo I am the Test",
+    "hello": "echo Hello World",
+    "cy-test": "cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.9.0"
+    "cypress": "^12.9.0",
+    "cypress-downloadfile": "^1.2.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
   }
 }
